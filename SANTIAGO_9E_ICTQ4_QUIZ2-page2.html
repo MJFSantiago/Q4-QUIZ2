@@ -1,0 +1,95 @@
+<DOCTRYPE! html>
+	<html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rebeccapurple;
+        }
+        .navbar {
+            background-color: #333; /* Dark grey background */
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd; /* Grey background on hover */
+            color: black;
+        }
+        .search-container {
+            float: right;
+            padding: 14px 20px;
+        }
+        .search-container input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+        .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ccc;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background: #bbb;
+        }
+
+        .portfolio {
+        	text-align: center;
+        }
+
+        h2 {
+        	color: whitesmoke;
+        	border: 50px;
+        	border-radius: 1000px;
+        	text-align: center;
+        }
+
+        .next {
+        	position: absolute;
+        	right: 100%;
+        	bottom: 100%;
+        }
+    </style>
+<body>
+
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">More</a>
+    <div class="search-container">
+        <form action="/search" method="get">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</div>
+
+
+<embed src="ICT9Emerald_Q1Project_Santiago_Matteo.html" height="500" width="600">
+	
+	<footer>
+<button onclick="redirectToAnotherPage()">Next Page</button>
+    <script>
+        function redirectToAnotherPage() {
+            window.location.href = 'SANTIAGO_9E_ICTQ4_QUIZ2-page3.html';
+        }
+    </script>
+</footer>
+
+</body>
+</html>
